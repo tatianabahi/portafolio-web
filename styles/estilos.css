@@ -246,8 +246,18 @@ span {
     color: var(--main-color);
 }
 
+.about-img {
+    position: relative;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
 .about-img img {
-    width: 90;
+    width: 90%;
     border-radius: 50%;
     border: .2rem solid var(--main-color);
 }
@@ -268,4 +278,438 @@ span {
 
 .about-content {
     text-align: center;
+}
+
+.about-content h3 {
+    font-size: 2.5rem;
+}
+
+.about-content p {
+    font-size: 1.5rem;
+    margin: 2rem 0 3rem;
+}
+
+.btn-box.btns {
+    display: inline-block;
+    width: 15rem;
+}
+
+.btn-box.btns a::before {
+    background: var(--second-bg-color);
+}
+
+.educacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: auto;
+    padding-bottom: 5rem;
+}
+  
+.educacion .educacion-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+  
+.educacion .educacion-column {
+    flex: 1 1 40rem;
+}
+  
+.educacion .title {
+    font-size: 3rem;
+    margin: 0 0 1.5rem 2rem;
+}
+  
+.educacion .educacion-box {
+    border-left: 0.2rem solid var(--main-color);
+    padding-left: 2rem;
+    margin-bottom: 5rem;
+}
+.educacion .educacion-row:last-child .educacion-column {
+    margin-bottom: 0;
+}
+  
+.educacion .educacion-content {
+    position: relative;
+}
+  
+.educacion .content .year {
+    font-size: 1.8rem;
+    color: var(--main-color);
+    margin-bottom: 0.5rem;
+}
+  
+.educacion .content .year i {
+    padding-right: 0.5rem;
+}
+  
+.educacion .content h3 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+  
+.educacion .content p {
+    font-size: 1.6rem;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+}
+.contacto {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 10rem 9% 2rem;
+  }
+  
+.contacto .heading {
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  
+.contacto .formulario {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: var(--second-bg-color);
+    padding: 3rem;
+    border-radius: 5px;
+  }
+  
+.contacto .formulario .form-group {
+    margin-bottom: 2rem;
+  }
+  
+.contacto .formulario label {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+.contacto .formulario input[type="text"],
+
+.contacto .formulario input[type="email"],
+
+.contacto .formulario textarea {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.6rem;
+    border: none;
+    background-color: #fff;
+    border-radius: 5px;
+}
+  
+.contacto .formulario textarea {
+    height: 120px;
+}
+  
+.contacto .formulario .btn-box {
+    text-align: center;
+    margin-top: 2rem;
+}
+  
+.contacto .formulario .btn {
+    display: inline-block;
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 0.15rem;
+    border: none;
+    border-radius: 0.95rem;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+  
+.contacto .formulario .btn:hover {
+    background-color: #0056b3;
+}
+  
+  /* Estilos adicionales */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+  
+:root {
+    --bg-color: #212F3D;
+    --second-bg-color: #66637F;
+    --text-color: #FFECCB;
+    --main-color: #C099BA;
+}
+  
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+  
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+  
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+  
+.logo {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+}
+  
+.navbar a {
+    font-size: 1.7rem;
+    color: var(--text-color);
+    font-weight: 500;
+    margin-left: 3.5rem;
+}
+  
+.navbar a:hover,
+
+.navbar a.active {
+    color: var(--main-color);
+}
+  
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--text-color);
+    cursor: pointer;
+    display: none;
+}
+  
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+  
+.inicio {
+    display: flex;
+    align-items: center;
+    padding: 0 9%;
+    background: url("/images/fotografia.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+  
+.inicio-content {
+    max-width: 60rem;
+}
+  
+.inicio-content h1 {
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+  
+.inicio-content .text-animate {
+    position: relative;
+    width: 32rem;
+}
+  
+.inicio-content .text-animate h3 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--second-bg-color);
+}
+  
+.inicio-content p {
+    font-size: 1.6rem;
+    margin: 2rem 0 4rem;
+}
+  
+.btn-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 34rem;
+    height: 5rem;
+}
+  
+.btn-box .btn {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 100%;
+    background: var(--main-color);
+    border: .2rem solid var(--main-color);
+    border-radius: .95rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: .15rem;
+    color: var(--bg-color);
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+  
+.btn-box .btn:hover {
+    color: var(--main-color);
+}
+  
+.btn-box .btn:nth-child(2) {
+    background: transparent;
+    color: var(--main-color);
+}
+  
+.btn-box .btn:nth-child(2):hover {
+    color: var(--bg-color);
+}
+  
+.btn-box .btn:nth-child(2)::before {
+    background: var(--main-color);
+}
+  
+.btn-box .btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--bg-color);
+    z-index: -1;
+    transition: .5s;
+}
+  
+.btn-box .btn:hover::before {
+    width: 100%;
+}
+  
+.inicio-social {
+    position: absolute;
+    bottom: 4rem;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+  
+.inicio-social a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 20px;
+    color: var(--main-color);
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+  
+.inicio-social a:hover {
+    color: var(--bg-color);
+}
+  
+.inicio-social a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--main-color);
+    z-index: -1;
+    transition: .5s;
+}
+  
+.inicio-social a:hover::before {
+    width: 100%;
+}
+  
+.inicio-imghover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45%;
+    height: 100%;
+    background: transparent;
+    transition: 3s;
+}
+  
+.inicio-imghover:hover{
+    background-color: var(--bg-color);
+    opacity: 0.8;
+}
+
+.habilidades {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 10rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.habilidades .heading {
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    color: var(--main-color);
+}
+
+.habilidades-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+    margin-top: 5rem;
+}
+
+.habilidades-item {
+    flex: 1 1 40rem;
+}
+
+.habilidad {
+    background-color: var(--second-bg-color);
+    padding: 4rem 3rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.habilidad i {
+    font-size: 6rem;
+    color: var(--main-color);
+    margin-bottom: 2rem;
+}
+
+.habilidad h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.habilidad ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.habilidad ul li {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
 }
